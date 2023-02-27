@@ -1,0 +1,52 @@
+@import url("./material-symbol.config.css");
+@import url("./light-theme.css");
+@import url("./dark-theme.css");
+
+:root {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+html,
+body {
+    box-sizing: border-box;
+}
+header {
+    -webkit-box-shadow: 0px 5px 4px 1px rgba(156,156,156,1);
+    -moz-box-shadow: 0px 5px 4px 1px rgba(156,156,156,1);
+    box-shadow: 0px 5px 4px 1px rgba(156,156,156,1);
+    margin: 12px 12px 0 12px;
+    border-radius: 2px;
+
+    background-color: var(--light-second-color);
+}
+header h1 {
+    text-align: center;
+    font-size: 32px;
+    padding: 20px;
+}
+header nav {
+    width: 100%;
+    background-color: var(--light-main-color);
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+header nav ul li {
+    list-style: none;
+    width: 100%;
+}
+header nav ul li a {
+    text-align: center;
+    display: block;
+    color: var(--dark-main-color);
+    padding: 4px;
+}
+header nav .material-symbols-sharp {
+    font-size: 45px;
+    margin: 0;
+}
+.no-margin {
+    margin: 0 !important;
+}
