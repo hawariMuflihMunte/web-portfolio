@@ -95,6 +95,24 @@
 .flex-grow-3 {
     flex-grow: 3;
 }
+.flex-basis-1 {
+    flex-basis: 1;
+}
+.flex-basis-2 {
+    flex-basis: 2;
+}
+.flex-basis-3 {
+    flex-basis: 3;
+}
+.row-gap-1 {
+    row-gap: 6px;
+}
+.row-gap-2 {
+    row-gap: 14px;
+}
+.row-gap-3 {
+    row-gap: 23px;
+}
 .items-center {
     align-items: center;
 }
