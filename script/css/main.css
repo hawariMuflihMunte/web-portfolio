@@ -54,28 +54,28 @@ header nav .material-symbols-sharp {
 main {
     display: flex;
     margin: 12px;
+    align-items: flex-start;
+    background-color: #fefefe;
 }
 article {
     background-color: var(--light-main-color);
-    flex-grow: 0;
-    padding: 20px;
+    flex-grow: 1;
+    padding: 26px;
 }
 aside {
-    position: relative;
     display: flex;
-    flex-grow: 1;
+    flex-grow: 2;
+    flex-basis: content;
     place-content: center;
     place-items: center;
     background-color: var(--light-third-color);
     max-width: 220px;
+    min-width: 200px;
+    padding: 12px;
 }
 aside img {
-    position: absolute;
     display: block;
-    padding: 10px;
-    max-width: 220px;
-    width: 100%;
-    max-height: 280px;
+    max-width: 100%;
     height: auto;
     border-radius: 3px;
 }
