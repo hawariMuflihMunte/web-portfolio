@@ -56,19 +56,26 @@ main {
     margin: 12px;
 }
 article {
-    background-color: #ECF2FF;
-    flex-grow: 2;
+    background-color: var(--light-main-color);
+    flex-grow: 0;
     padding: 20px;
 }
 aside {
-    background-color: #FFF4D2;
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    place-content: center;
+    place-items: center;
+    background-color: var(--light-third-color);
     max-width: 220px;
-    padding: 10px;
 }
 aside img {
-    max-width: 320px;
+    position: absolute;
+    display: block;
+    padding: 10px;
+    max-width: 220px;
     width: 100%;
-    max-height: 320px;
-    height: 100%;
+    max-height: 280px;
+    height: auto;
     border-radius: 3px;
 }
