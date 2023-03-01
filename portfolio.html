@@ -8,7 +8,7 @@
     <meta name="description" content="Halaman web biodata" />
     <meta name="author" content="Hawari Muflih Munte" />
 
-    <title>Profile | Hawari Muflih Munte</title>
+    <title>Projects | Hawari Muflih Munte</title>
 
     <!-- Nunito Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -41,12 +41,6 @@
 
     <!-- Main JS -->
     <script src="./script/js/views/script.js" type="module"></script>
-
-    <!-- Lightweight client-side loader that feature-detects and load polyfills only when necessary -->
-    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
-
-    <!-- Load the element definition -->
-    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
   </head>
   <body class="light-theme">
     <div class="container">
@@ -69,12 +63,12 @@
         <nav class="nav-link shadow corner-round-sharp main-bg">
           <ul>
             <li>
-              <a href="./" class="active">
+              <a href="./index.html">
                 <i class="material-symbols-sharp"> home </i>
               </a>
             </li>
             <li>
-              <a href="./portfolio.html">
+              <a href="./" class="active">
                 <i class="material-symbols-sharp"> dataset </i>
               </a>
             </li>
@@ -82,18 +76,51 @@
         </nav>
       </header>
       <main class="display-flex gap-2">
-        <article class="shadow corner-round-sharp main-bg">
-          <zero-md src="https://raw.githubusercontent.com/hawariMuflihMunte/hawariMuflihMunte/main/README.md"></zero-md>
+          <article class="shadow corner-round-sharp main-bg display-flex image-gallery">
+            <header>
+                <h2>My Projects</h2>
+            </header>
+            <section class="image">
+                <img src="./assets/img/projects/bookApps.png" alt="bookApps" class="responsive-image corner-round-sharp">
+                <div class="image-description">
+                    <a href="https://hawarimuflihmunte.github.io/bookApps/" target="_blank">
+                        <i class="material-symbols-sharp">link</i>
+                    </a>
+                </div>
+            </section>
+            <section class="image">
+                <img src="./assets/img/projects/repo51.png" alt="repo51" class="responsive-image corner-round-sharp">
+                <div class="image-description">
+                    <a href="https://hawarimuflihmunte.github.io/repo51/">
+                        <i class="material-symbols-sharp">link</i>
+                    </a>
+                </div>
+            </section>
+            <section class="image">
+                <img src="./assets/img/projects/wns.png" alt="wns-prototype" class="responsive-image corner-round-sharp">
+                <div class="image-description">
+                    <a href="https://hawarimuflihmunte.github.io/wns-prototype/">
+                        <i class="material-symbols-sharp">link</i>
+                    </a>
+                </div>
+            </section>
+            <section class="image">
+                <img src="./assets/img/projects/bebykit.png" alt="BebyKit" class="responsive-image corner-round-sharp">
+                <div class="image-description">
+                    <a href="https://hawari-882.github.io/BebyKit/">
+                        <i class="material-symbols-sharp">link</i>
+                    </a>
+                </div>
+            </section>
+            <section class="image">
+                <img src="./assets/img/projects/pupuk.png" alt="Pupuk" class="responsive-image corner-round-sharp">
+                <div class="image-description">
+                    <a href="https://github.com/hawariMuflihMunte/pupuk">
+                        <i class="material-symbols-sharp">link</i>
+                    </a>
+                </div>
+            </section>
         </article>
-        <aside class="shadow corner-round-sharp third-bg position-fixed-small">
-          <section>
-            <img
-              src="./assets/img/profile/profile.jpg"
-              alt="Hawari Muflih Munte"
-              loading="lazy"
-            />
-          </section>
-        </aside>
       </main>
       <footer class="main-bg shadow corner-round-sharp">
         <section class="display-flex place-content-center">

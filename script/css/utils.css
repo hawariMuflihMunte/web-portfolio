@@ -169,6 +169,53 @@
 .corner-round-sharp {
     border-radius: 2px;
 }
+.responsive-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.display-flex.image-gallery {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.display-flex.image-gallery > header {
+    width: 100%;
+    margin-bottom: 12px;
+    color: #555;
+}
+.display-flex.image-gallery > .image {
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    transition: 280ms linear;
+    border: 1px solid transparent;
+    max-width: 200px;
+    flex-basis: 180px;
+}
+.display-flex.image-gallery > .image:hover {
+    opacity: 0.7;
+}
+.display-flex.image-gallery > .image div.image-description {
+    width: 100%;
+    height: 100%;
+    transition: 260ms linear;
+    z-index: 10;
+    position: absolute;
+    margin: 0;
+    display: flex;
+}
+.display-flex.image-gallery > .image div.image-description a {
+    text-decoration: none;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+.display-flex.image-gallery > .image:hover div.image-description {
+    transform: translateY(-100%);
+}
 .container {
     display: block;
     margin-left: auto;

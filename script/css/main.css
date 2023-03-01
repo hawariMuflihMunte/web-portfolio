@@ -47,6 +47,9 @@ body.dark-theme {
 .fourth-txt {
     color: var(--fourth-color) !important;
 }
+header nav.nav-header h1 {
+    font-size: 20px;
+}
 header nav.nav-link {
     width: 100%;
 }
@@ -60,16 +63,24 @@ header nav.nav-link ul li {
     width: 100%;
 }
 header nav.nav-link ul li a {
+    transition: all 320ms ease;
     text-align: center;
     display: block;
     color: inherit;
     padding: 6px 0;
 }
+header nav.nav-link ul li a.active {
+    background-color: var(--third-color) !important;
+}
+header nav.nav-link ul li a.active:hover {
+    opacity: 0.8;
+}
 body.dark-theme header nav.nav-header section:first-child {
     background-color: var(--second-color) !important;
 }
-header nav.nav-link ul li a:hover {
+header nav.nav-link ul li a:not(.active):hover {
     background-color: var(--third-color);
+    opacity: 0.6;
 }
 body.dark-theme header nav.nav-link {
     background-color: var(--second-color) !important;
@@ -111,4 +122,10 @@ aside img {
     max-width: 100%;
     height: auto;
     border-radius: 3px;
+}
+footer {
+    padding: 16px 0;
+}
+body.dark-theme footer {
+    box-shadow: none !important;
 }
