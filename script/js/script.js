@@ -1,37 +1,76 @@
 
 document.addEventListener("DOMContentLoaded", () => {
+    function checkWebStorageAPI() {
+        if (typeof (Storage) === 'undefined') return false;
+        return true;
+    }
+
     function saveThemePreferences(theme) {
+        if (!checkWebStorageAPI) {
+            console.error('API Web Storage tidak tersedia untuk web browser ini!');
+            return;
+        }
+
         localStorage.setItem('theme', theme);
     }
 
-    function setTheme(themeName) {
-        saveThemePreferences(themeName);
+    function setTheme(theme) {
+        if (theme === 'dark-theme') {
+            document.body.classList.remove('light-theme');
+            document.body.classList.add('dark-theme');
 
-        document.documentElement.className = themeName;
-    }
-
-    function toggleTheme() {
-        if (localStorage.getItem('theme') === 'light-theme') {
-            setTheme('light-theme');
+            saveThemePreferences(theme);
         } else {
-            setTheme('dark-theme');
+            document.body.classList.remove('dark-theme');
+            document.body.classList.add('light-theme');
+
+            saveThemePreferences(theme);
         }
     }
 
+    // Jalankan segera fungsi ini agar tema dapat di-render
     (function () {
-        if (localStorage.getItem('theme') === 'dark-theme') {
-            setTheme('dark-theme');
-        } else {
-            setTheme('light-theme');
+        if (checkWebStorageAPI) {
+            if (localStorage.getItem('theme') === 'dark-theme') {
+                setTheme('dark-theme');
+            } else {
+                setTheme('light-theme');
+            }
         }
     })();
 
     const themeToggler = document.getElementById('themeToggler');
-    themeToggler.addEventListener('click', () => {
+    themeToggler.addEventListener('change', () => {
         if (themeToggler.checked) {
-            toggleTheme();
+            setTheme('dark-theme');
+
+            // Jalankan segera fungsi ini agar tema dapat di-render
+            (function () {
+                if (checkWebStorageAPI) {
+                    if (localStorage.getItem('theme') === 'dark-theme') {
+                        setTheme('dark-theme');
+                        themeToggler.checked = true;
+                    } else {
+                        setTheme('light-theme');
+                        themeToggler.checked = false;
+                    }
+                }
+            })();
         } else {
-            toggleTheme();
+            setTheme('light-theme');
+
+            // Jalankan segera fungsi ini agar tema dapat di-render
+            (function () {
+                if (checkWebStorageAPI) {
+                    if (localStorage.getItem('theme') === 'light-theme') {
+                        setTheme('light-theme');
+                        themeToggler.checked = false;
+                    } else {
+                        setTheme('dark-theme');
+                        themeToggler.checked = true;
+                    }
+                }
+            })();
         }
     });
 });

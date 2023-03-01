@@ -17,6 +17,7 @@ body {
 }
 body {
     background-color: var(--fourth-color);
+    transition: all 260ms linear;
 }
 body.dark-theme {
     background-color: var(--main-color);
