@@ -113,6 +113,15 @@
 .flex-basis-3 {
     flex-basis: 3;
 }
+.flex-shrink-1 {
+    flex-shrink: 1;
+}
+.flex-shrink-2 {
+    flex-shrink: 2;
+}
+.flex-shrink-3 {
+    flex-shrink: 3;
+}
 .gap-1 {
     gap: 6px;
 }
@@ -140,9 +149,34 @@
 .column-gap-3 {
     column-gap: 23px;
 }
+.position-fixed {
+    position: fixed;
+}
+@media screen and (max-width: 576px) {
+    .position-fixed-small {
+        position: fixed;
+    }
+}
+.display-none {
+    display: none;
+}
+.margin-top {
+    margin-top: 12px;
+}
 .margin-bottom {
     margin-bottom: 12px;
 }
 .corner-round-sharp {
     border-radius: 2px;
+}
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 98%;
+    }
 }

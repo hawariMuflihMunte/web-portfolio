@@ -18,8 +18,9 @@ body {
 body {
     background-color: var(--fourth-color);
 }
-@media screen and (min-width: 576px) {
-    
+body.dark-theme {
+    background-color: var(--main-color);
+    color: antiquewhite;
 }
 .main-bg {
     background-color: var(--main-color) !important;
@@ -63,8 +64,14 @@ header nav.nav-link ul li a {
     color: inherit;
     padding: 6px 0;
 }
+body.dark-theme header nav.nav-header section:first-child {
+    background-color: var(--second-color) !important;
+}
 header nav.nav-link ul li a:hover {
     background-color: var(--third-color);
+}
+body.dark-theme header nav.nav-link {
+    background-color: var(--second-color) !important;
 }
 header nav.nav-link .material-symbols-sharp {
     font-size: 30px;
@@ -81,6 +88,9 @@ article {
     flex-grow: 1;
     padding: 26px;
 }
+body.dark-theme main article {
+    background-color: var(--fourth-color) !important;
+}
 aside {
     display: flex;
     flex-direction: column;
@@ -91,6 +101,9 @@ aside {
     max-width: 220px;
     min-width: 200px;
     padding: 12px;
+}
+body.dark-theme main aside {
+    background-color: var(--second-color) !important;
 }
 aside img {
     display: block;
