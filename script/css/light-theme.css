@@ -1,30 +1,6 @@
-:root {
-    --light-main-color: #ECF2FF;
-    --light-second-color: #E3DFFD;
-    --light-third-color: #E5D1FA;
-    --light-fourth-color: #FFF4D2;
-}
-.bg-l1 {
-    background-color: var(--light-main-color) !important;
-}
-.txt-l1 {
-    background-color: var(--light-main-color) !important;
-}
-.bg-l2 {
-    background-color: var(--light-second-color) !important;
-}
-.txt-l2 {
-    background-color: var(--light-second-color) !important;
-}
-.bg-l3 {
-    background-color: var(--light-third-color) !important;
-}
-.txt-l3 {
-    background-color: var(--light-third-color) !important;
-}
-.bg-l4 {
-    background-color: var(--light-fourth-color) !important;
-}
-.txt-l4 {
-    background-color: var(--light-fourth-color) !important;
+.light-theme {
+    --main-color: #ECF2FF;
+    --second-color: #E3DFFD;
+    --third-color: #E5D1FA;
+    --fourth-color: #FFF4D2;
 }

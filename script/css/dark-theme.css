@@ -1,30 +1,6 @@
-:root {
-    --dark-main-color: #3F3B6C;
-    --dark-second-color: #624F82;
-    --dark-third-color: #9F73AB;
-    --dark-fourth-color: #A3C7D6;
-}
-.bg-d1 {
-    background-color: var(--dark-main-color) !important;
-}
-.txt-d1 {
-    background-color: var(--dark-main-color) !important;
-}
-.bg-d2 {
-    background-color: var(--dark-second-color) !important;
-}
-.txt-d2 {
-    background-color: var(--dark-second-color) !important;
-}
-.bg-d3 {
-    background-color: var(--dark-third-color) !important;
-}
-.txt-d3 {
-    background-color: var(--dark-third-color) !important;
-}
-.bg-d4 {
-    background-color: var(--dark-fourth-color) !important;
-}
-.txt-d4 {
-    background-color: var(--dark-fourth-color) !important;
+.dark-theme {
+    --main-color: #3F3B6C;
+    --second-color: #624F82;
+    --third-color: #9F73AB;
+    --fourth-color: #A3C7D6;
 }

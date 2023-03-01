@@ -7,14 +7,46 @@
 :root {
     font-family: 'Nunito Sans', sans-serif;
 }
+* {
+    box-sizing: border-box;
+}
 html,
 body {
-    box-sizing: border-box;
     padding: 12px;
+    color: #555;
+}
+body {
+    background-color: var(--fourth-color);
+}
+@media screen and (min-width: 576px) {
+    
+}
+.main-bg {
+    background-color: var(--main-color) !important;
+}
+.main-txt {
+    color: var(--main-color) !important;
+}
+.second-bg {
+    background-color: var(--second-color) !important;
+}
+.second-txt {
+    color: var(--second-color) !important;
+}
+.third-bg {
+    background-color: var(--third-color) !important;
+}
+.third-txt {
+    color: var(--third-color) !important;
+}
+.fourth-bg {
+    background-color: var(--fourth-color) !important;
+}
+.fourth-txt {
+    color: var(--fourth-color) !important;
 }
 header nav.nav-link {
     width: 100%;
-    background-color: var(--light-main-color);
 }
 header nav.nav-link ul {
     display: flex;
@@ -28,15 +60,16 @@ header nav.nav-link ul li {
 header nav.nav-link ul li a {
     text-align: center;
     display: block;
-    color: var(--dark-main-color);
+    color: inherit;
     padding: 6px 0;
 }
 header nav.nav-link ul li a:hover {
-    background-color: var(--light-third-color);
+    background-color: var(--third-color);
 }
 header nav.nav-link .material-symbols-sharp {
     font-size: 30px;
     margin: 0;
+    color: inherit;
 }
 main {
     display: flex;
@@ -45,18 +78,16 @@ main {
     margin: 12px 0;
 }
 article {
-    background-color: var(--light-main-color);
     flex-grow: 1;
     padding: 26px;
 }
 aside {
     display: flex;
     flex-direction: column;
-    flex-grow: 2;
+    flex-grow: 0;
     flex-basis: content;
     place-content: center;
     place-items: center;
-    background-color: var(--light-third-color);
     max-width: 220px;
     min-width: 200px;
     padding: 12px;
