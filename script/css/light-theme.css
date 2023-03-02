@@ -1,6 +1,7 @@
+
 .light-theme {
-    --main-color: #ECF2FF;
-    --second-color: #E3DFFD;
-    --third-color: #E5D1FA;
-    --fourth-color: #FFF4D2;
+  --main-color: #ecf2ff;
+  --second-color: #e3dffd;
+  --third-color: #e5d1fa;
+  --fourth-color: #fff4d2;
 }
