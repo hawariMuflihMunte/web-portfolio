@@ -468,3 +468,8 @@ body.dark-theme .display-flex.image-gallery > .image div.image-description a {
     max-width: 98%;
   }
 }
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 70%;
+  }
+}
