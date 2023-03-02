@@ -1,0 +1,27 @@
+{
+  "name": "web-portfolio",
+  "version": "1.5.1",
+  "description": "Portfolio Website",
+  "main": "script.js",
+  "scripts": {
+    "start": "node ./liveServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hawariMuflihMunte/web-portfolio.git"
+  },
+  "keywords": [
+    "web",
+    "portfolio",
+    "portfolio-web"
+  ],
+  "author": "Hawari Muflih Munte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hawariMuflihMunte/web-portfolio/issues"
+  },
+  "homepage": "https://github.com/hawariMuflihMunte/web-portfolio#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
