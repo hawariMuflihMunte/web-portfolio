@@ -1,9 +1,9 @@
 
 function DisplayYear() {
-  const thisYear = +new Date().getFullYear();
-  const containerElement = document.getElementById("displayYear");
+	const thisYear = Number(new Date().getFullYear());
+	const containerElement = document.getElementById('displayYear');
 
-  containerElement.innerHTML = `${thisYear}`;
+	containerElement.innerHTML = `${thisYear}`;
 }
 
 export default DisplayYear;
