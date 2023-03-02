@@ -1,12 +1,23 @@
 
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Halaman web biodata" />
     <meta name="author" content="Hawari Muflih Munte" />
+
+    <meta property="og:title" content="The Rock" />
+    <meta property="og:type" content="static.page" />
+    <meta
+      property="og:url"
+      content="https://hawarimuflihmunte.github.io/web-portfolio/"
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/hawariMuflihMunte/web-portfolio/blob/main/favicon-32x32.png?raw=true"
+    />
 
     <title>Profile | Hawari Muflih Munte</title>
 
@@ -46,7 +57,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
 
     <!-- Load the element definition -->
-    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"
+    ></script>
   </head>
   <body>
     <div class="container">
@@ -61,7 +75,7 @@
             class="box-component display-flex shadow corner-round-sharp place-content-center place-items-center second-bg"
           >
             <label class="switch">
-              <input type="checkbox" id="themeToggler"/>
+              <input type="checkbox" id="themeToggler" />
               <span class="slider"></span>
             </label>
           </section>
@@ -83,21 +97,26 @@
       </header>
       <main class="display-flex gap-2">
         <article class="shadow corner-round-sharp main-bg">
-          <zero-md src="https://raw.githubusercontent.com/hawariMuflihMunte/hawariMuflihMunte/main/README.md"></zero-md>
+          <zero-md
+            src="https://raw.githubusercontent.com/hawariMuflihMunte/hawariMuflihMunte/main/README.md"
+          ></zero-md>
         </article>
-        <aside class="shadow corner-round-sharp third-bg">
-          <section>
-            <img
-              src="./assets/img/profile/profile.jpg"
-              alt="Hawari Muflih Munte"
-              loading="lazy"
-            />
-          </section>
-        </aside>
+        <div id="content">
+          <aside class="shadow corner-round-sharp third-bg">
+            <section>
+              <img
+                src="./assets/img/profile/profile.jpg"
+                alt="Hawari Muflih Munte"
+                loading="lazy"
+              />
+            </section>
+          </aside>
+        </div>
       </main>
       <footer class="main-bg shadow corner-round-sharp">
         <section class="display-flex place-content-center">
-          Hawari Muflih Munte&nbsp;©&nbsp;<div id="displayYear"></div>
+          Hawari Muflih Munte&nbsp;©&nbsp;
+          <div id="displayYear"></div>
         </section>
       </footer>
     </div>
