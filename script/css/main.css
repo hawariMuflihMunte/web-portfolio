@@ -96,7 +96,7 @@ main {
     gap: 20px;
     margin: 12px 0;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 769px) {
     main {
         flex-direction: column-reverse !important;
         flex-wrap: wrap;
@@ -107,7 +107,7 @@ article {
     flex-grow: 1;
     padding: 26px;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 769px) {
     article {
         flex-grow: 1;
         flex-shrink: 0;
@@ -122,11 +122,19 @@ aside {
     flex-direction: column;
     flex-grow: 0;
     flex-basis: content;
+    flex-shrink: 1;
     place-content: center;
     place-items: center;
     max-width: 220px;
     min-width: 200px;
     padding: 12px;
+}
+@media screen and (max-width: 769px) {
+    aside {
+        flex-basis: 100%;
+        width: 100%;
+        max-width: max-content;
+    }
 }
 body.dark-theme main aside {
     background-color: var(--second-color) !important;
