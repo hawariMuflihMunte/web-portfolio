@@ -6,8 +6,7 @@ const params = {
 	port: 9000,
 	host: '127.0.0.1',
 	root: './',
-	open: true,
-	wait: 1200,
+	wait: 400,
 	cors: enable,
 };
 

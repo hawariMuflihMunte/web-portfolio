@@ -124,17 +124,18 @@ aside {
   flex-grow: 0;
   flex-basis: content;
   flex-shrink: 1;
-  place-content: center;
-  place-items: center;
+  justify-content: center;
   max-width: 220px;
   min-width: 200px;
   padding: 12px;
+  position: relative;
 }
 @media screen and (max-width: 769px) {
   aside {
     flex-basis: 100%;
     width: 100%;
     max-width: max-content;
+    margin-bottom: 6px;
   }
 }
 body.dark-theme main aside {
@@ -145,6 +146,63 @@ aside img {
   max-width: 100%;
   height: auto;
   border-radius: 3px;
+}
+aside section:first-child {
+  z-index: 900;
+}
+aside section:not(:first-child) {
+  margin-top: 16px;
+}
+aside section:nth-child(2) {
+  background-color: var(--second-color);
+  border-radius: 2px;
+  padding: 12px;
+  position: absolute !important;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+aside section#biodataDetails {
+  transform: translateX(0px) translateY(calc(100% - 17px)) !important;
+}
+@media screen and (max-width: 769px) {
+  aside section#biodataDetails {
+    transform: none !important;
+    box-shadow: none !important;
+    position: relative !important;
+  }
+}
+/* .displayBiodataDetails {
+  display: block !important;
+  visibility: visible !important;
+  transform: translateX(0px) translateY(calc(100% - 32px)) !important;
+} */
+aside section:nth-child(2) > h4 {
+  margin: 7px 0;
+}
+aside section:nth-child(2) > h5#displayAge {
+  margin: 14px 0;
+}
+aside section:nth-child(2) > #displayHobbies {
+  text-align: left;
+  margin-top: 18px;
+}
+body.light-theme aside section:nth-child(2) > #displayHobbies,
+body.light-theme aside section:nth-child(2) > #displayHobbies * {
+  color: #555 !important;
+}
+#showDetails {
+  width: 100%;
+  border-radius: 0 0 2px 2px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 180ms linear;
+}
+#showDetails:hover {
+  background-color: var(--main-color);
 }
 footer {
   padding: 16px 0;

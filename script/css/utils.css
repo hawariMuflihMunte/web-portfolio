@@ -378,7 +378,7 @@
   }
 }
 .display-none {
-  display: none;
+  display: none !important;
 }
 .margin-top {
   margin-top: 12px;
